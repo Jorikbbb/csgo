@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Настройка и оптимизация CS:GO</title>
+	<link rel="stylesheet" type="text/css" href="csgo.css">
+	<style>
+		a {
+			text-decoration: none;
+		}
+	</style>
+</head>
+<body bgcolor="#14141f">
+	<h1>НАСТРОЙКА CS:GO</h1>
+	<br>
+	<br>
+	<div class="tag">
+		<ul>
+			<p>Содержание:</p>
+			<li><a href="#mce-head-0"><span class="colortext"> Настройка графики в ксго</span></a></li>
+			<li><a href="#mce-head-1"><span class="colortext"> Полезные бинды</span></a></li>
+			<li><a href="#mce-head-2"><span class="colortext"> Параметры запуска</span></a></li>
+			<li><a href="#mce-head-3"><span class="colortext"> Настройка мыши</span></a></li>
+			<li><a href="#mce-head-4"><span class="colortext"> Консольные команды для буста фпс, настройка карты</span></a>
+			<ul>
+			<li><a href="#mce-head-5"><span class="colortext"> autoexec для буста фпс</span></a></li>
+			<li><a href="#mce-head-6"><span class="colortext"> Настройка карты для тренировки гранат, autoexec, бинды</span></a></li>
+			</ul>
+			</li>
+			<li><a href="#mce-head-7"><span class="colortext"> Настройки Nvidia и GeForce Experience</span></a></li>
+			<li><a href="#mce-head-8"><span class="colortext"> Другие настройки ксго</span></a></li>
+			<li><a href="#mce-head-9"><span class="colortext"> Настройки стим</span></a></li>
+			<li><a href="#mce-head-10"><span class="colortext"> Другие советы и фишки</span></a></li>
+		</ul>
+	</div>
+	<br>
+	<br>
+	<br>
+	<div>
+		<h2 id="mce-head-0">Настройка графики</h2>
+		<p style="text-align: justify;">Если у вас слабый ПК, рекомендую поставить самые низкие настройки графики</p>
+		<img src="Screenshot_1.png" width="700">
+		<img src="Screenshot_2.png" width="700">
+		<p style="text: justify;">Если у вас достаточно мощный ПК, то можете ставить немного другие настройки. При высоких настройках "Детализация шейдоров" можно видеть лучше противника через молотов</p>
+	</div>
+
+	
+	<div class="info">
+		<h2 id="mce-head-1">Полезные и нужные бинды</h2>
+		<p style="text-align: justify;">Для удобной игры остро необходимы бинды. В этом разделе покажу от самый полезных биндов, до самых бесполезных, которые ничем не помогут (для фана)</p>
+		<input id="info__body_1" class="info__button" type="checkbox">
+		<label for="info__body_1" class="info__headline">
+			Нужные бинды 
+		</label>
+  		<div class="info__body">
+  			<p>Movement</p>
+			<p><b>bind "клавиша" "+speed;r_cleardecals"</b> - очистка крови</p>
+			<p><b>bind "MWHEELDOWN" "+jump";bind "MWHEELUP" "+jump";bind "SPACE" "+jump"</b>  - прыжок на колесико (вверх и вниз)</p>
+			<p><b>bind "клавиша" "toggle cl_righthand 0 1"</b> - менять руки</p>
+			<br>
+			<p></p>
+			<p><b>alias +djump "+jump; +duck";</b></p>
+			<p><b>alias -djump "-jump; -duck";</b> ⠀⠀- бинд на высокий прыжок с ctrl</p>
+			<p><b>bind "SPACE" "+djump"</b></p>
+			<br>
+			<p>Для раскида</p>
+			<p><b>bind "клавиша" "+jump;-attack;-attack2;-jump"</b> - jumpthrow </p>
+			<p><b>bind "клавиша" "incrementvar cl_crosshairsize 1.0 1000 995.5"</b> - прицел для раскида</p>
+			<p><b>bind "клавиша" "+forward; -attack; -forward"</b> - runthrow (редко используется)</p>
+			<br>
+			<p>Быстрое исользование предметов</p>
+			<p><b>bind "клавиша" "use weapon_flashbang"</b> - взять флешку</p>
+			<p><b>bind "клавиша" "use weapon_smokegrenade"</b>- взять смок</p>
+			<p><b>bind "клавиша" "use weapon_molotov; use weapon_incgrenade"</b> - взять молотов</p>
+			<p><b>bind "клавиша" "use weapon_smokegrenade"</b> - взять хаешку</p>
+			<p><b>bind "клавиша" "use weapon_c4; drop;"</b> - дроп бомбы </p>
+			<br>
+			<p>HUD</p>
+			<p><b>bind "клавиша" "incrementvar cl_radar_scale 0.25 3.0 -0.2"</b> - изменение размер радара </p>
+			<p><b>bind "клавиша" "incrementvar cl_crosshaircolor 0 5 1"</b> - изменение цвета прицела</p>
+			<p><b>bind "клавиша" "apply_crosshair_code код прицела"</b> - изменение прицела </p>
+			<br>
+			<p>Связь</p>
+			<p><b>bind "клавиша" "radio2"</b> - открывается окно с приказами (нужен чтобы бота остановить)
+			</p>
+			<p><b>bind "клавиша" "toggle voice_enable"</b> - мут и размут всех игроков</p>
+			<p><b>bind "клавиша" "say текст"</b> - сказать текст в общем чате</p>
+			<p><b>bind "клавиша" "say_team текст"</b> - сказать текст в командном чате</p>
+			<p><b>bind "клавиша" "disconnect"</b> - выход из сервера
+			</p>
+		</div>
+		<input id="info__body_2" class="info__button_1" type="checkbox">
+		<label for="info__body_2" class="info__headline_1">
+			Не самые полезные бинды
+		</label>
+		<div class="info__body_3">
+			<p>Смена цвета худа на ходьбу, выстрел и перезарядку (бесполезно)</p>
+			<b>
+			<p>bind "s" "+back; r_cleardecals; cl_hud_color 4"</p>
+			<p>bind "d" "+moveright; r_cleardecals; cl_hud_color 3"</p>
+			<p>bind "a" "+moveleft; r_cleardecals; cl_hud_color 2"</p>
+			<p>bind "w" "+forward; r_cleardecals; cl_hud_color 1"</p>
+			<p>bind "MOUSE1" "+attack; cl_hud_color 5"</p>
+			<p>bind "MOUSE2" "+attack2; cl_hud_color 6"</p>
+			<p>bind "r" "+reload; cl_hud_color 7"</p>
+			</b>
+			<br>
+			<p><b>bind "клавиша" "sensevity 99"</b> - делает большую сенсу</p>
+			<br>
+			<h4>Смена клан-тега на ходьбу</h4>
+			<p>1) Дла начало надо вступить на 4 разные группы (можно меньше)</p>
+			<p>2) Копируем ID 4-х групп и подставляем.</p>
+			<p>3) Биндим их на ходьбу, к примеру:</p>
+			<b>
+			<p>bind "w" "+forward;cl_clanid 13971932</p>
+			<p>bind "a" "+moveleft;cl_clanid 13978274</p>
+			<p>bind "d" "+moveright;cl_clanid 13976228</p>
+			<p>bind "s" "+back;cl_clanid 13979332</p>
+			</b>
+			<br>
+			<h4>Бинд на +left (персонаж останавливается после отпущения кнопки)</h4>
+			<b>
+			<p>bind "X" "AfkMod"</p>
+			<p>alias "AfkMod" "Afk_ON"</p>
+			<p>alias "Afk_ON" "slot3; ON; alias AfkMod Afk_OFF"</p>
+			<p>alias "Afk_OFF" "slot1; OFF; alias AfkMod Afk_ON"</p>
+			<p>alias "ON" "+forward; +left"</p>
+			<p>alias "OFF" "-forward; -left"</p>
+			</b>
+		</div>
+	</div>
+
+	<div>
+		<h2 id="mce-head-2">Параметры запуска</h2>
+		<p style="text-align: justify;">
+			При запуске игры, она не всегда делает нужные настройки. Параметры запуска нужны, чтобы при заходе в ксго не писать каждый раз нужные команды
+		</p>
+		<p>
+			Рекомендуемые параметры ксго для слабых пк: –novid -d3d9ex -tickrate 128 -noforcemparms -high +cl_updaterate 128 +cl_cmdrate 128 +ex_interpratio 1 +rate 128000
+		</p>
+		<p>
+			Чтобы зайти в параметры запуска нужно кликнуть правой кнопкой мыши по ксго в библиотеке > Свойства > Общие > Параметры запуска
+		</p>
+		<img src="parametri.png" width="700">
+		<br>
+		<p>Основные параметры и за что они отвечают:</p>
+		<p>-novid - выключает вступительное видео в КС ГО</p>
+		<p>-w 640 - задает ширину разрешения экрана в пикселях</p>
+		<p>-h 480 - задает высоту разрешения экранав в пикселях</p>
+		<p>-full - запускает игру в полноэкранном режиме</p>
+		<p>-window - запускает игру в оконном режиме</p>
+		<p>-noborder - запускает игру в оконном режиме без рамки</p>
+		<p>-low - запускает игру с низким приоритетом</p>
+		<p>-high - запускает игру с высоким приоритетом</p>
+		<p>-dxlevel 81 - для использования DirectX 8.1</p>
+		<p>-dxlevel 90 - для использования DirectX 9</p>
+		<p>-heapsize 1048576 - выделяет для игры 2GB оперативной памяти</p>
+		<p>-noaafonts - отключает сглаживание шрифтов экрана</p>
+		<p>-freq 144 - для изменения герцовки монитора (для 60 герц это бесполезно)</p>
+		<p>-soft - запускает игру в графическом режиме Software</p>
+		<p>-d3d - запускает игру в графическом режиме Direct3D</p>
+		<p>-gl - запускает игру в графическом режиме Open GL</p>
+		<p>-noforcemparms - использует настройки кнопок мыши из Windows</p>
+		<p>-noforcemaccel - использует настройки акселерации мыши из Windows</p>
+		<p>-noforcemspd - использует настройки скорости мыши из Windows</p>
+		<p>-nojoy - отключает поддержку джойстика</p>
+		<p>-noipx - отключает протокол LAN</p>
+		<p>-noip - для удаления IP-адреса без возможности подключения к серверам</p>
+		<p>-nosound - отключает звук в игре</p>
+		<p>-nosync - отключает вертикальную синхронизацию</p>
+		<p>-console - включает внутриигровую консоль</p>
+		<p>-dev - для включения мода разработчика</p>
+		<p>-safe - запускает игру в безопасном режиме и отключенет аудио</p>
+		<p>-autoconfig - восстанавливает стандартне настройки видео-параметров</p>
+		<p>-condebug - сохраняет все логи консоли в текстовом файле console.log</p>
+		<p>-nocrashdialog - отключает отображение некоторых ошибок</p>
+		<p>+exec name.cfg - для подключения конфига с именем "name"</p>
+		<p>-allow_third_party_software - отключает Trust Factor</p>
+	</div>
+
+	<div>
+		<h2 id="mce-head-3">Настройка мыши</h2>
+		<p style="text-align: justify;">
+			В этом разделе я покажу, как отключить акселерацию мыши в игре и в параметрых виндоуса, чтобы в ксго она не плавала
+		</p>
+		<p>
+		<b>
+			Настройка мыши в Windows
+		</b>
+		</p>
+		<p>
+			Для начала надо отключить сглаживание мыши в виндоус
+		</p>
+		<p>
+			Заходим в параметры Виндоус > Устройство > Мышь > Дополнительные параметры мыши > Параметры указателя и убираем галочку с Включить повышенную точность установки указателя
+		</p>
+		<img src="image.png" width="700">
+		<br>
+		<p>
+		<b>
+			Углубленная настройка мыши
+		</b>
+		</p>
+		<p>
+			В этом разделе будем менять настройки реестора, тем людям, кому уж очень нужно чувствовать сенсу
+		</p>
+		<p>
+			Переходите по ссылке и скачивайте этот файл (не бойтесь, вирусов нет), разархивируйте содержимое файла
+		</p>
+		<a href="https://drive.google.com/file/d/1M28mWFFYcW4fG_Ktuk_cei9Jqc5ncgZL/view">Необходимое</a>
+		<p>
+			Заходим в MarkC акселарация > MarkC_Windows_10+8.x+7_MouseFix > запускаем файл Windows_7+Vista+XP_Default.reg, жмем да и еще раз да.
+		</p>
+		<img src="mish.png" width="700">
+		<p>
+			Далее выключаем DVR. Это настройка от Xbox, которая запускается по вверх окна ксго, ее надо отключить.
+		</p>
+		<p>
+			Заходим в Выключение DVR, и запускаем два файла (Disable DVR 1 и Disable DVR 2), жмем да и еще раз да
+		</p>
+		<img src="mish2.png" width="700">
+		<br>
+		<p>
+			Последним этапом будем менять настройку мыши в реестре. Этот способ вряд ли, может что-то поменять. Я изменений не увидел, но может вы почувствуйте. Заходим в реестр > нажимаем Win+R и пишем regedit
+		</p>
+		<img src="mish3.png" width="400">
+		<p>
+			Ищем этот путь. В параметрах MouseSpeed, MouseThreshold1, MouseThreshold2, кликаем правой кнопкой мыши > Изменить > Ставим значение на 0.
+		</p>
+		<img src="mish4.png" width="700">
+	</div>
+	<div>
+		<h2 id="mce-head-4">Консольные команды для буста фпс, autoexec и быстрая настройка карты для тренировки гранат</h2>
+		<p>
+			Консольные команды очень важны в игре, например, поменять руки, прицел, радар и не только. Сейчас я покажу какие консольные команды дадут буст фпс и удобство в игре.
+		</p>
+		<p>
+			<b>
+				Консольные команды для буста фпс 
+			</b>
+		<p>cl_forcepreload 1</p>
+		<p>cl_disablehtmlmotd 1</p>
+		<p>cl_disablefreezecam 1</p>
+		<p>cl_autohelp 0</p>
+		<p>cl_showhelp 0</p>
+		<p>cl_hud_playercount_showcount 0</p>
+		<p>cl_detail_avoid_force 0</p>
+		<p>cl_detail_avoid_radius 0</p>
+		<p>cl_detail_avoid_recover_speed 0</p>
+		<p>cl_detail_max_sway 0</p>
+		<p>cl_windspeed 0</p>
+		<p>cl_wpn_sway_scale 1</p>
+		<p>func_break_max_pieces 0</p>
+		<p>gameinstructor_enable 0</p>
+		<p>mat_hdr_enabled 0</p>
+		<p>mat_queue_mode 2</p>
+		<p>muzzleflash_light 0</p>
+		<p>net_allow_multicast 0</p>
+		<p>r_avglight 1</p>
+		<p>r_avglightmap 0</p>
+		<p>r_drawtracers_firstperson 1 - 0 убирает пули</p>
+		<p>r_dynamic 1 - 0 убирает тоже чето</p>
+		<p>r_eyegloss 0</p>
+		<p>r_eyemove 0</p>
+		<p>r_eyeshift_x 0</p>
+		<p>r_eyeshift_y 0</p>
+		<p>r_eyeshift_z 0</p>
+		<p>r_eyesize 0</p>
+		<p>r_cheapwaterend 1</p>
+		<p>r_cheapwaterstart 1</p>
+		<p>sv_forcepreload 1</p>
+		<p>dsp_slow_cpu 1 — незначительное снижения качества звука. не советую, но дает буст фпс</p>
+		<p>mat_disable_bloom 1 — отключает bloom-эффект</p>
+		<p>r_drawparticles 0 — убирает почти все анимацию — выстрелы, всплески воды и т.д.</p>
+		<p>m_mouseaccel1 0</p>
+		<p>m_mouseaccel2 0</p>
+		<p>m_mousespeed 0</p>
+		<p>fps_max_menu 0 </p>
+		<p>fps_max 0</p>
+		<p>cl_interp_ratio 2</p>
+		<p>cl_updaterate 128</p>
+		<p>cl_cmdrate 128</p>
+		<p>rate 786432</p>
+		<p>Все эти команды прибавляют фпс игре и улучшает индексация пуль в ксго. Каждую команду можно самому выбрать и вставлять вручную в консоль. Некоторые параметры нужно каждый раз менять при заходе в игру.</p>
+		<p>
+		<h2 id="mce-head-5"></h2>
+			Но зачем заморачивается, если можно сделать autoexec.  В него можно записать все эти настройки, и при заходе в ксго, не нужно будет вводить параметры снова.
+		</p>
+		<p>
+			Для этого создаем блокнот и пишем туда все эти консольные команды. Сохраняем с названием autoexec, после точки обязательно пишем .cfg (autoexec.cfg).
+		</p>
+		<img src="consol1.png" width="700">
+		<p>
+			 Заходим в свойства ксго и этот файл мы переносим в папку cfg.
+		</p>
+		<img src="consol.png" width="700">
+		<img src="consol2.png" width="700">
+		<p>
+			Далее в <a href="#mce-head-2">параметрах запуска</a> пишем +exec autoexec.cfg. 
+		</p>
+		<p>
+			Теперь при заходе в игру все настройки автоматически применяются.
+		</p>
+		<h2 id="mce-head-6">Настройка карты для тренировки гранат, autoexec, бинды</h2>
+		<p>
+			Чтобы повысить свой скилл вам необходимо знать гранаты на определенных картах, или же вы хотите повторить тактику со своей командой. Для этого вам надо настроить свой сервер. Бесконечная разминка, повтор или траектория гранат, и многое другое нужно самостоятельно использовать консолные команды.
+		</p>
+		<p>
+			Основные команды для настройки своего сервера:
+		</p>
+		<p>sv_cheats 1 - команда для консоли разработчиков</p>
+		<p>bot_kick - убирает всех ботов</p>
+		<p>mp_freezetime 0 - время после начала раунда</p>
+		<p>mp_maxmoney 300000 - максимальное колличество денег</p>
+		<p>mp_startmoney 300000 - сколько вначла раунда денег</p>
+		<p>mp_autoteambalance 0 - убирает баланс команд</p>
+		<p>mp_limitteams 0 - убирает лимит гранат в инвентаре</p>
+		<p>mp_maxrounds 999 - максимальное число раундов</p>
+		<p>mp_timelimit 60 - убирает лимит игроков в команде</p>
+		<p>mp_buy_anywhere 1 - закупк апо всей карте</p>
+		<p>ammo_grenade_limit_total 1200 - дает колличество гранат</p>
+		<p>mp_warmuptime 9999999999999 - установить время разминки</p>
+		<p>sv_infinite_ammo 1 - бесконечные патроны и гранаты</p>
+		<p>sv_enablebunnyhopping 1 - включает банихоп</p>
+		<p>sv_autobunnyhopping 1 - относится к банихопу</p>
+		<p>sv_grenade_trajectory 1 - включает траекторию гранат</p>
+		<p>mp_autobalance 0 - убирает баланс</p>
+		<p>mp_limitsteam 0 - убирает лимит</p>
+		<p>mp_restartgame 1 - перезапуск раунда</p>
+		<p>
+			Эти команды нужно по очереди вводить вручную.
+		</p>
+		<br>
+		<p>
+			Но можно еще проще сделать. Можно так же забиндить на кнопку exec настройку карты или просто ввести exec в консоль.
+		</p>
+		<p>
+			Для этого нужно скачать два файла по ссылке "CFG",  trainmap.cfg и trainmapp.cfg (вирусов нет, кфг делал сам)
+		</p>
+		<a href="https://drive.google.com/drive/folders/1dZ93YKqL8e6GVEH6NiVGZsrcTNzMCW8e?usp=share_link">CFG</a>
+		<p>
+			trainmap.cfg - делает полностью настройку серверa
+		</p>
+		<p>
+			trainmapp.cfg - выдает все ножи и гранаты
+		</p>
+		<p>
+			Эти два файла мы должны перенести в папку кфг C:\Program Files (x86)\Steam\steamapps\common\Counter-Strike Global Offensive\csgo\cfg
+		</p>
+		<img src="trainmap.png" width="700">
+		<p>
+			Заходим в ксго, запускаем тренировку с ботами. <b>(обязательно режим обычный, если запустите соревновательный, то при бесконечной разминке вы будете стоять на арене и ксго не будет давать возможности вылететь на ноуклипе)</b> Открывем консоль, пишем: <li>bind "кнопка" exec trainmap.cfg </li>
+			<li>
+				bind "кнопка" exec trainmapp.cfg
+			</li>
+			<p>
+				Или же просто ввести в консоль exec trainmap.cfg и exec trainmapp.cfg 
+			</p>
+			<p>
+				Вот и всё! С помощью двух кнопок вы можете настроить полностью сервер.
+			</p>
+			<br>
+			<h2>Бинды и другие команды для сервера</h2>
+			<br>
+			<p>bind "кнопка" "noclip" - летать по карте</p>
+			<p>bind "кнопка" "bot_place" - поставить бота в определенное место</p>
+			<p>bind "клавиша" "sv_rethrow_last_grenade" - повтор гранаты</p>
+			<p>bind "клавиша" "host_timescale 1.0" - обычная скорость игры</p>
+			<p>bind "клавиша" "host_timescale 3.0" - 3х скорость игры (для тренировки смоков, чтобы долго не ждать)</p>
+			<p>cl_grenadepreview 1 - показывает траекторию полета и отскоков гранаты</p>
+			<p>r_drawothermodels 2 - включает вх</p>
+			<p>god - бессмертие </p>
+			<p>bot_add_ct - добавляет бота кт</p>
+			<p>bot_add_t  - добавляет бота т</p>
+			<p>bot_stop 1 - остановить бота </p>
+			<p>bot_stop 0 - активировать бота</p>
+			<p>give weapon_hegrenade - выдает хае</p>
+			<p>give weapon_smokegrenade - выдает смок</p>
+			<p>give weapon_flashbang - выдает флеш</p>
+			<p>give weapon_molotov  - выдает молотов за т</p>
+			<p>give weapon_incgrenade - выдает молотов за кт</p>
+			<p>give weapon_decoy - выдает декой</p>
+		</p>
+	</div>
+		<br>
+	<div>
+		<h2 id="mce-head-7">Настройки Nvidia</h2>
+		<br>
+		<p>
+			Настройки драйвера Nvidia нужна для повышение фпс в игре. При определенных настройках можно оптимизировать ксго.
+		</p>
+		<p>Оптимальные настройки для ксго, эти же параметры импользую я:</p>
+		<img src="nvidia1.png" width="700">
+		<br>
+		<img src="nvidia2.png" width="700">
+		<br>
+		<img src="nvidia3.png" width="700">
+		<br>
+		<p>Параметр Цифровой интенсивности дает более насыщеную картинку на мониторе и по этому его надо менять по своему усмотрению.</p>
+		<img src="nvidia4.png" width="700">
+		<br>
+		<img src="nvidia5.png" width="700">
+		<br>
+		<img src="nvidia6.png" width="700">
+		<br>
+		<img src="nvidia7.png" width="700">
+		<br>
+		<img src="nvidia8.png" width="700">
+		<br>
+		<img src="nvidia9.png" width="700">
+		<br>
+		<img src="nvidia10.png" width="700">
+		<br>
+		<h2>Nvidia GeForce Experience</h2>
+		<br>
+		<p>
+			Позволяет настраивать больше насыщености, яркости, контрасности. Тут уже по вкусу. Каждый ставит настройки разные. К примеру мои параметры такие:
+		</p>
+		<img src="exp.png" width="500">
+	</div>
+	<div>
+		<br>
+		<h2 id="mce-head-8">Другие настройки ксго</h2>
+		<br>
+		<p>
+			Для большей скорости игры следует снять галочки в свойствах игры. ПКМ по ксго > свойства.
+		</p>
+		<p>
+			Если вы не пользуйтесь оверлеем стима, можете смело ее выключать. Синхронизацию сохранений и Игровой кинотеатор отключаем.
+		</p>
+		<img src="dryset.png" width="700">
+		<p>
+			Далее отключаем систему ввода Steam
+		</p>
+			<img src="kon.png" width="700">
+		<p>
+			Что бы больше чувствовать мышь следует отключить оптимизацию во весь экран.
+		</p>
+		<p>
+			Заходим в свойствах игры > ПКМ по иконке игры > Свойства > Совместимость > Ставим галочку на отключить оптимизацию во весь экран
+		</p>
+		<br>
+		<img src="opt1.png" width="700">
+		<br>
+		<img src="opt2.png" width="400">
+		<br>
+		<img src="opt3.png" width="300">
+	</div>
+	<div>
+		<h2 id="mce-head-9">Настройки Steam</h2>
+		<p>Далее мы настраиваем стим, для меньшей нагрузки ПК. Ставим те же настройки, что и на скриншотах</p>
+		<img src="steam1.png" width="600">
+		<br>
+		<img src="steam2.png" width="600">
+		<br>
+		<img src="steam3.png" width="600">
+		<br>
+		<img src="steam4.png" width="600">
+		<br>
+		<img src="steam5.png" width="600">
+		<br>
+		<p>Если не используете Remote Play для записи игры, то отключайте</p>
+		<img src="steam6.png" width="600">
+		<br>
+		<img src="steam7.png" width="600">
+	</div>
+	<div>
+		<h2 id="mce-head-10">Отключение ЦП 0</h2>
+		<p>
+			Отключение ЦП 0 дает больше фпс в ксго. Правда каких-то изменений я не заметил, но возможно это может исправить фризы в игре. Про игрок Lobanjica, бывший игрок FPL, использует эту функцию.
+		</p> 
+		<p>
+			Чтобы это сделать заходим в Диспетчер задач > Подробности > ПКМ по csgo.exe > Задать сходство > Кликаем на ЦП 0, чтобы отключить.
+		</p>
+		<img src="dz0.png" width="500">
+		<img src="dz1.png" width="500">
+	</div>
+</body>
+</html>
